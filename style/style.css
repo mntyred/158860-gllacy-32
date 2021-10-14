@@ -1,0 +1,34 @@
+.advantage{
+  background-color: #e7d9ab;
+  background-image: url(../img/advantage-border-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news {
+  background-color: #ffffff;
+  background-image: url(../img/news-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.subscription {
+  background-color: #ffffff;
+  background-image: url(../img/subscription-blog-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.delivery {
+  background-color: #ffffff;
+  background-image: url(../img/delivery-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ }
+ .contacts {
+  background-color: #ffffff;
+  background-image: url(../img/contatcs-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ }

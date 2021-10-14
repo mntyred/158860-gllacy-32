@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +11,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link">
-              <img src="" alt="Логотип Глейси Шоп">
+              <img src="img/logo.svg" alt="Логотип Глейси Шоп" width="136" height="57">
             </a>
           </li>
           <li class="navigation-item">
@@ -57,7 +58,7 @@
                 <button class="slide-button">Заказать</button>
               </div>
               <div class="slide-img">
-                <img src="" alt="">
+                <img src="img/slide-img-1.png" alt="Клубничное мороженное" width="306" height="507">
               </div>
             </div>
             <div class="slide">
@@ -67,6 +68,9 @@
                 и наслаждение даже в самый жаркий летний день. </p>
                 <button class="slide-button">Заказать</button>
               </div>
+              <div class="slide-img">
+                <img src="img/slide-img-2.png" alt="Сливочное мороженое со вкусом банана" width="306" height="507">
+              </div>
             </div>
             <div class="slide">
               <div class="slide-info">
@@ -74,6 +78,9 @@
                 <p class="slide-description">Необычный сладкий десерт с карамельным топпингом и кусочками
                 зефира завоюет сердца сладкоежек всех возрастов.</p>
                 <button class="slide-button">Заказать</button>
+              </div>
+              <div class="slide-img">
+                <img src="img/slide-img-3.png" alt="Карамельный пломбир с маршмеллоу" width="306" height="507">
               </div>
             </div>
           </div>
@@ -124,23 +131,29 @@
       <section class="gifts">
         <h2 class="gifts-title">Заказывайте мороженое и получайте подарки!</h2>
         <article class="gifts-item">
-            <h3 class="gifts-item-title">Малинка даром!</h3>
-            <p class="gifts-item-description">При покупке 2 кг любого фруктового мороженого, добавим в
-              ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#" class="gifts-item-button button">Хочу подарок</a>
+            <div class="gifts-item-content">
+              <h3 class="gifts-item-title">Малинка даром!</h3>
+              <p class="gifts-item-description">При покупке 2 кг любого фруктового мороженого, добавим в
+                ваш заказ банку малинового варенья бесплатно.</p>
+              <a href="#" class="gifts-item-button button">Хочу подарок</a>
+            </div>
+            <img src="img/gifts-img-1.png" alt="Малинка" width="181" height="284">
         </article>
         <article class="gifts-item">
-            <h3 class="gifts-item-title">Маршмеллоу даром!</h3>
-            <p class="gifts-item-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок
-              совершенно бесплатно.</p>
-            <a href="#" class="gifts-item-button button">Хочу подарок</a>
+            <div class="gifts-item-content">
+              <h3 class="gifts-item-title">Маршмеллоу даром!</h3>
+              <p class="gifts-item-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок
+                совершенно бесплатно.</p>
+              <a href="#" class="gifts-item-button button">Хочу подарок</a>
+            </div>
+            <img src="img/gifts-img-2.png" alt="Маршмеллоу" width="232" height="359">
         </article>
       </section>
       <section class="popular">
         <h2 class="popular-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="popular-list">
           <li class="popular-list-item">
-            <img class="popular-item-image" src="" alt="">
+            <img class="popular-item-image" src="img/catalog/catalog-item-1.jpg" alt="" width="168" height="168">
             <h3 class="popular-item-title">Малинка</h3>
             <p class="popular-item-description">Сливочное мороженое с малиновым джемом</p>
             <div class="popular-item-wrap-buy">
@@ -151,7 +164,7 @@
             </div>
           </li>
           <li class="popular-list-item">
-            <img class="popular-item-image" src="" alt="">
+            <img class="popular-item-image" src="img/catalog/catalog-item-2.jpg" alt="" width="168" height="168">
             <h3 class="popular-item-title">Фисташка</h3>
             <p class="popular-item-description">Фисташковый пломбир с кусочками шоколада</p>
             <div class="popular-item-wrap-buy">
@@ -162,7 +175,7 @@
             </div>
           </li>
           <li class="popular-list-item">
-            <img class="popular-item-image" src="" alt="">
+            <img class="popular-item-image" src="img/catalog/catalog-item-3.jpg" alt="" width="168" height="168">
             <h3 class="popular-item-title">Черника</h3>
             <p class="popular-item-description">Крем-брюле с черничным джемом</p>
             <div class="popular-item-wrap-buy">
@@ -173,7 +186,7 @@
             </div>
           </li>
           <li class="popular-list-item">
-            <img class="popular-item-image" src="" alt="">
+            <img class="popular-item-image" src="img/catalog/catalog-item-4.jpg" alt="" width="168" height="168">
             <h3 class="popular-item-title">Бабл-гам</h3>
             <p class="popular-item-description">Ванильный пломбир со сладкой посыпкой</p>
             <div class="popular-item-wrap-buy">
