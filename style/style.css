@@ -1,4 +1,4 @@
-.advantage{
+.advantage {
   background-color: #e7d9ab;
   background-image: url(../img/advantage-border-img.jpg);
   background-repeat: no-repeat;
@@ -24,11 +24,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
- }
- .contacts {
+}
+.contacts {
   background-color: #ffffff;
   background-image: url(../img/contatcs-bg-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
- }
+}
+
+
