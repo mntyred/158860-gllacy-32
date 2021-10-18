@@ -1,8 +1,105 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+.navigation-link {
+  color: #2D3440;
+  line-height: 20px;
+  text-decoration: none;
+}
+.navigation-phone{
+  font-weight: 700;
+}
+.navigation-link-login {
+  font-size: 14px;
+}
+.navigation-cart-status {
+  font-size: 14px;
+}
+.slide-title{
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+.slide-description{
+  font-size: 18px;
+  line-height: 24px;
+}
+.gifts-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.gifts-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.popular-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.popular-list-item{
+  background-color: #FCFCFC;
+  text-align: center;
+}
+.popular-item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.popular-item-description {
+  color: #565C66;
+}
+.popular-item-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
 .advantage {
   background-color: #e7d9ab;
-  background-image: url(../img/advantage-border-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../img/advantage-border-img.png);
+  border-radius: 16px;
+  padding: 24px;
+}
+.advantage-content-wrapper {
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+.advantage-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.advantage-item-text {
+  color: #565C66;
 }
 .news {
   background-color: #ffffff;
@@ -11,12 +108,26 @@
   background-position: center;
   background-size: cover;
 }
+.news-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+.news-sub-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
 .subscription {
   background-color: #ffffff;
   background-image: url(../img/subscription-blog-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.subscription-text{
+  color: #565C66;
 }
 .delivery {
   background-color: #ffffff;
@@ -25,6 +136,15 @@
   background-position: center;
   background-size: cover;
 }
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.form-label {
+  font-weight: 700;
+  line-height: 20px;
+}
 .contacts {
   background-color: #ffffff;
   background-image: url(../img/contatcs-bg-img.jpg);
@@ -32,5 +152,34 @@
   background-position: center;
   background-size: cover;
 }
-
-
+.contacts-info {
+  background-color: #FCFCFC;
+}
+.contacts-description {
+  color: #565C66;
+}
+.contacts-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contacts-phone {
+  color: #2D3440;
+  text-decoration: none;
+}
+.footer-navigation-link {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.footer-navigation-item:first-child {
+  font-weight: 700;
+}
+.footer-copyright-text{
+  font-size: 12px;
+  line-height: 16px;
+}
+.footer-copyright-link {
+  color: #2D3440;
+}
