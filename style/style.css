@@ -63,7 +63,9 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
-
+.gifts-item {
+  background-color: #ff7799;
+}
 .gifts-title {
   font-weight: 900;
   font-size: 32px;
