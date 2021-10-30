@@ -19,14 +19,27 @@
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
-
+html {
+  height: 100%;
+}
 body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #2d3440;
   background-color: #feafc3;
+}
+.main-container {
+  flex-grow: 1;
+}
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
 }
 .button {
   background-color: #ff2f64;
@@ -39,6 +52,21 @@ body {
   color: #2d3440;
   font-weight: 700;
   text-decoration: none;
+}
+.page-header {
+  display: flex;
+  margin: 0 auto;
+  width: 1170px;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 553px;
+  list-style: none;
+}
+.navigation-user {
+  max-width: 419px;
+  margin-left: auto;
 }
 .navigation-link {
   color: #2d3440;
@@ -54,6 +82,13 @@ body {
 .navigation-cart-status {
   font-size: 14px;
 }
+.slide {
+  display: flex;
+  padding-left: 70px;
+}
+.slide-info {
+  width: 470px;
+}
 .slide-title {
   font-weight: 900;
   font-size: 36px;
@@ -63,8 +98,30 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+.slider-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.gifts-title {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 443px;
+}
+.gifts-wrapper {
+  display: flex;
+}
 .gifts-item {
   background-color: #ff7799;
+  display: flex;
+  width: 570px;
+  padding-left: 40px;
+  padding-top: 19px;
+}
+.gifts-item:not(:first-child) {
+  margin-left: 30px;
+}
+.gifts-item-content {
+  width: 321px;
 }
 .gifts-title {
   font-weight: 900;
@@ -80,6 +137,14 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  width: 527px;
+  margin: 0 auto;
+  text-align: center;
+}
+.popular-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .popular-list-item {
   background-color: #fcfcfc;
@@ -110,16 +175,31 @@ body {
 .advantage-content-wrapper {
   background-color: #fcfcfc;
   border-radius: 16px;
+  padding: 56px 40px;
 }
 .advantage-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  width: 995px;
+  margin: 0 auto;
+  text-align: center;
+}
+.advantage-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .advantage-item-text {
   color: #565c66;
+  margin: 0;
+}
+.news-block {
+  display: flex;
 }
 .news {
+  width: 570px;
+  padding: 32px;
   background-color: #ffffff;
   background-image: url(../img/news-bg-img.jpg);
   background-repeat: no-repeat;
@@ -136,18 +216,26 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  width: 303px;
 }
 .subscription {
+  width: 570px;
+  margin-left: 30px;
+  padding: 6px;
   background-color: #ffffff;
   background-image: url(../img/subscription-blog-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .subscription-text {
   color: #565c66;
 }
 .delivery {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 64px 64px 100px;
   background-color: #ffffff;
   background-image: url(../img/delivery-bg-img.jpg);
   background-repeat: no-repeat;
@@ -155,15 +243,25 @@ body {
   background-size: cover;
 }
 .delivery-title {
+  width: 356px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+}
+.delivery-description {
+  width: 371px;
+}
+.delivery-order {
+  background-color: #fcfcfc;
+  width: 500px;
+  padding: 40px;
 }
 .form-label {
   font-weight: 700;
   line-height: 20px;
 }
 .contacts {
+  padding: 64px;
   background-color: #ffffff;
   background-image: url(../img/contatcs-bg-img.jpg);
   background-repeat: no-repeat;
@@ -171,6 +269,8 @@ body {
   background-size: cover;
 }
 .contacts-info {
+  width: 343px;
+  padding: 40px;
   background-color: #fcfcfc;
 }
 .contacts-description {
@@ -185,6 +285,19 @@ body {
   color: #2d3440;
   text-decoration: none;
 }
+.page-footer {
+}
+.page-footer-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer-social-list {
+  margin: 0 299px 0 4px;
+  padding: 0;
+  list-style: none;
+}
+
 .footer-navigation-link {
   color: #2d3440;
   font-size: 14px;
@@ -193,6 +306,10 @@ body {
 }
 .footer-navigation-item:first-child {
   font-weight: 700;
+}
+.footer-copyright {
+  margin-left: auto;
+  margin-right: 14px;
 }
 .footer-copyright-text {
   font-size: 12px;
