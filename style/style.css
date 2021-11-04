@@ -573,26 +573,97 @@ body {
   margin: 0 0 40px 0;
 }
 .catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
   width: 807px;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 48px;
+  box-sizing: border-box;
 }
 .catalog-filter-sorting {
   width: 196px;
+  margin: 0 24px 0 0;
+  box-sizing: border-box;
 }
 .catalog-filter-price {
+  margin: 0 24px 0 0;
   width: 196px;
+  box-sizing: border-box;
+}
+.price-inputs {
+  display: flex;
+}
+.price-input {
+  max-width: 26px;
+}
+.price-input-label {
+  display: flex;
 }
 .catalog-filter-percent {
+  margin: 0;
   width: 367px;
+  box-sizing: border-box;
 }
+.percent-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+.percent-item:not(.percent-item:last-child) {
+  margin-right: 16px;
+}
+.control {
+  display: flex;
+  align-items: center;
+}
+.control-mark {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 1px solid #2d3440;
+  box-sizing: border-box;
+}
+
 .catalog-filter-fillers {
+  box-sizing: border-box;
+  margin: 16px 24px 0 0;
+  padding: 0;
   width: 596px;
+}
+.fillers-list {
+  display: flex;
+  padding: 8px 16px;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+.fillers-item:not(.fillers-item:last-child) {
+  margin-right: 12px;
+}
+.fillers-control {
+  display: flex;
+  align-items: center;
+}
+.fillers-control-mark {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid #2d3440;
 }
 .catalog-filter-button {
   font-weight: 700;
   width: 187px;
+  border: none;
+  padding: 8px 0;
+  align-self: flex-end;
+  box-sizing: border-box;
 }
 .catalog-list {
   margin: 0;
@@ -622,6 +693,7 @@ body {
 .catalog-button {
   margin-left: auto;
   padding: 12px 32px;
+  box-sizing: border-box;
 }
 .catalog-control {
   display: flex;
