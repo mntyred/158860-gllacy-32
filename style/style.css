@@ -19,6 +19,11 @@
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -112,13 +117,12 @@ body {
   line-height: 20px;
   text-decoration: none;
 }
-.page-navigation .navigation-item:last-child .navigation-link{
+.page-navigation .navigation-item:last-child .navigation-link {
   padding-right: 0;
 }
 .navigation-logo {
   padding: 0;
   margin-right: 16px;
-
 }
 .navigation-search {
   width: 32px;
@@ -144,7 +148,6 @@ body {
   background-color: #fcfcfc;
   opacity: 0.3;
   z-index: -1;
-
 }
 .navigation-login {
   height: 32px;
@@ -153,7 +156,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  border-radius:26px;
+  border-radius: 26px;
   overflow: hidden;
   cursor: pointer;
   box-sizing: border-box;
@@ -179,7 +182,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  border-radius:26px;
+  border-radius: 26px;
   overflow: hidden;
   cursor: pointer;
   box-sizing: border-box;
@@ -197,9 +200,8 @@ body {
 }
 .navigation-user .navigation-phone {
   font-weight: 700;
-  padding:0;
+  padding: 0;
   margin-right: 18px;
-
 }
 .navigation-link-login {
   font-size: 14px;
@@ -221,7 +223,7 @@ body {
   display: flex;
 }
 .slide-info {
-  padding: 136px 0 110px 70px;
+  margin: 130px 0 114px 70px;
   width: 470px;
 }
 .slide-title {
@@ -246,18 +248,17 @@ body {
   margin-left: 20px;
   width: 310px;
   padding-top: 21px;
-  max-height: 506px;
   position: relative;
 }
 .slide-img::before {
   content: "";
   position: absolute;
   z-index: -1;
-  top: calc(50% - 286px/2 - 3px);
-  left: calc(50% - 312px/2 + 1px);;
+  top: calc(50% - 286px / 2 - 3px);
+  left: calc(50% - 312px / 2 + 1px);
   width: 312px;
   height: 312px;
-  background: #FFCBD8;
+  background: #ffcbd8;
   border-radius: 50%;
 }
 .slider-arrows {
@@ -268,10 +269,11 @@ body {
   justify-content: space-between;
   width: 350px;
 }
-.slider-prev, .slider-next{
+.slider-prev,
+.slider-next {
   width: 38px;
   height: 38px;
-  border: 2px solid #FCFCFC;
+  border: 2px solid #fcfcfc;
   background: rgba(252, 252, 252, 0.3);
   box-sizing: border-box;
   border-radius: 26px;
@@ -337,14 +339,16 @@ body {
   display: flex;
   align-items: flex-end;
   width: 570px;
+  border-radius: 16px;
 }
 .gifts-item:not(:first-child) {
   margin-left: 30px;
 }
 .gifts-item-content {
-  width: 321px;
-  padding: 40px 0 40px 40px;
+  max-width: 321px;
+  margin: 40px 8px 34px 40px;
 }
+
 .gifts-item-title {
   margin-top: 0;
   margin-bottom: 16px;
@@ -354,20 +358,20 @@ body {
 }
 .gifts-item-description {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 .gifts-item-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 176px;
-  height: 44px;
+  width: 184px;
+  height: 54px;
 }
 .popular {
   margin-bottom: 80px;
 }
 .popular-title {
-  margin: 0 auto 56px;
+  margin: 0 auto 107px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -454,17 +458,16 @@ body {
 }
 .advantage-list-item {
   display: flex;
-  width: 506px;
   align-items: flex-start;
 }
 .advantage-item-text {
+  width: 442px;
   color: #565c66;
-  padding-left: 16px;
-  margin: 0;
+  margin: 0 0 0 16px;
 }
 .news-block {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 .news {
   width: 570px;
@@ -474,6 +477,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 16px;
 }
 .news-title {
   font-weight: 400;
@@ -499,10 +503,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 16px;
 }
 .subscription-wrapper {
-  padding: 26px;
+  padding: 24px 20px 24px 26px;
   background-color: #fcfcfc;
+  border-radius: 16px;
 }
 .subscription-text {
   margin: 0 0 42px 0;
@@ -512,17 +518,21 @@ body {
 .subscription-form {
   max-width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .subscription-input {
   box-sizing: border-box;
-  width: 332px;
+  width: 364px;
   height: 48px;
   margin-right: 24px;
   padding: 14px 16px;
 }
 .subscription-button {
-  width: 152px;
-  height: 44px;
+  padding: 0;
+  display: flex;
+  min-width: 160px;
+  height: 52px;
 }
 .delivery {
   display: flex;
@@ -535,6 +545,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 16px;
 }
 .delivey-text {
   width: 371px;
